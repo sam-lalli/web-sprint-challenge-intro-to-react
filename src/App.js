@@ -18,7 +18,8 @@ const StyledHeader = styled.h1`
 
 const FlexBox = styled.div`
 display: flex;
-flex-wrap: wrap;
+/* flex-wrap: wrap; */
+flex-direction:column;
 `
 
 
@@ -40,7 +41,7 @@ const App = () => {
   },[])
   return (
     <div className="App">
-      <StyledHeader className="Header">Characters</StyledHeader>
+      <StyledHeader className="Header"> Top 10 Greatest Star Wars Characters Of All Time</StyledHeader>
       <FlexBox>
         {
           player.map(pl =>{
